@@ -29,8 +29,8 @@ def twitter(keyword):
             cont = i.find_element_by_css_selector('p.tweet-text')
             # 트윗 업로드 시간
             timestamp = i.find_element_by_css_selector('a.tweet-timestamp')
-            # result.append([cont.text.strip(), timestamp.get_attribute("title")])
-            result = [[텍스트, 시간], [텍스트, 시간], [텍스트, 시간], ...]
+            result.append([cont.text.strip(), timestamp.get_attribute("title")])
+            # result = [[텍스트, 시간], [텍스트, 시간], [텍스트, 시간], ...]
             print(cont.text.strip(), timestamp.get_attribute("title"))
             print('------------------------------------------')
         save_excel(result)
