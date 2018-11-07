@@ -20,8 +20,6 @@ def instagram_scrap(keyword):
             for li in driver.find_elements_by_class_name('C4VMK'):
                 user = li.find_element_by_tag_name('a').text # 작성자
                 reply = li.find_element_by_tag_name('span').text # 댓글, 해시태그
-                result.append(reply)
-                rank_user.append(user)
                 print("({}) {}".format(user, reply))
     except Exception as e:
         print(e)
