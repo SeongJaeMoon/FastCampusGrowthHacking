@@ -1,7 +1,7 @@
 import time
 from selenium import webdriver
 
-URL = 'https://www.instagram.com/explore/tags/{}
+URL = 'https://www.instagram.com/explore/tags/{}'
 DRIVER_DIR = '/Users/temp/Project_FC/chromedriver'
 
 def instagram_scrap(keyword):
